@@ -5,7 +5,7 @@
     color: white;
     border-radius: 5px;
     background-color: #0077b5;
-    padding:5px ;
+    padding: 5px;
     text-align: center;
     font-size: 2.5em;
 }
@@ -19,13 +19,6 @@ span.section-title {
     font-weight: 500;
 }
 
-/* .box{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
 /* FORMAT STUFF END */
 
 /* LANDING START */
@@ -57,12 +50,13 @@ span.section-title {
 #about {
     background: linear-gradient(rgba(244, 242, 242, 0.85),
             rgba(248, 248, 248, 0.85)),
-             url(../image/resume2.webp);
+        url(../image/resume2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
     line-height: 2;
+    scroll-margin-block-start: 60px;
 }
 
 .a {
@@ -73,6 +67,38 @@ span.section-title {
 
 /* ABOUT END */
 
+/* SERVICES START */
+#services {
+    background: linear-gradient(rgba(244, 242, 242, 0.10),
+            rgba(248, 248, 248, 0.10)), url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    scroll-margin-block-start: 60px;
+}
+
+#services .card img {
+    aspect-ratio: 1;
+    width: 25%;
+    margin: auto;
+}
+
+/* SERVICES END */
+
+/* SKILLS START */
+#skills {
+    background: linear-gradient(rgba(244, 242, 242, 0.10),
+            rgba(248, 248, 248, 0.1010)), url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    scroll-margin-block-start: 60px;
+}
+
+/* SKILLS END */
+
 /* RESUMÉ START */
 #resume {
     background: linear-gradient(rgba(244, 242, 242, 0.85),
@@ -81,10 +107,24 @@ span.section-title {
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
+    scroll-margin-block-start: 60px;
 }
+
 
 /* RESUMÉ END */
 
+/* PROJECT START */
+#project {
+    background: linear-gradient(rgba(244, 242, 242, 0.10),
+            rgba(248, 248, 248, 0.10)), url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    scroll-margin-block-start: 60px;
+}
+
+/* PROJECT END */
 
 /* TESTIMONIAL START */
 #testimonial {
@@ -95,6 +135,7 @@ span.section-title {
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* color: white;     */
+    scroll-margin-block-start: 60px;
 }
 
 .circle {
@@ -122,6 +163,9 @@ span.section-title {
 /* TESTIMONIAL END */
 
 /* CONTACT LINKS START */
+#contact{
+    scroll-margin-block-start: 60px;
+}
 .fa {
     color: white;
     padding: 10px;
