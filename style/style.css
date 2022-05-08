@@ -1,0 +1,153 @@
+/* chosen portfolio template: http://demo.harnishdesign.net/html/callum/index.html */
+
+/* FORMAT STUFF START */
+.section-title {
+    color: white;
+    border-radius: 5px;
+    background-color: #0077b5;
+    padding:5px ;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+span.section-title {
+    color: white;
+    background-color: grey;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* .box{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+/* FORMAT STUFF END */
+
+/* LANDING START */
+#landing {
+    background: linear-gradient(rgba(244, 242, 242, 0.15),
+            rgba(248, 248, 248, 0.15)), url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#landing .btn:hover {
+    background-color: #0077b5;
+    color: white;
+    transition: 0.8s;
+}
+
+#Me {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    border: 10px solid #0077b5;
+    object-fit: cover;
+    /* height: 100%; */
+}
+
+/* LANDING END */
+
+/* ABOUT START */
+#about {
+    background: linear-gradient(rgba(244, 242, 242, 0.85),
+            rgba(248, 248, 248, 0.85)),
+             url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    line-height: 2;
+}
+
+.a {
+    /* text-align: center; */
+    font-size: 125px;
+    font-weight: bold;
+}
+
+/* ABOUT END */
+
+/* RESUMÉ START */
+#resume {
+    background: linear-gradient(rgba(244, 242, 242, 0.85),
+            rgba(248, 248, 248, 0.85)), url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+/* RESUMÉ END */
+
+
+/* TESTIMONIAL START */
+#testimonial {
+    background: linear-gradient(rgba(244, 242, 242, 0.1),
+            rgba(248, 248, 248, 0.1)),
+        url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* color: white;     */
+}
+
+.circle {
+    width: 10px !important;
+    height: 10px !important;
+    aspect-ratio: 1 !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.projects-container img {
+    max-height: 400px;
+    /* max-width: 300px; */
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+/* TESTIMONIAL END */
+
+/* CONTACT LINKS START */
+.fa {
+    color: white;
+    padding: 10px;
+    transition: .5s;
+    font-size: 2em;
+}
+
+.fa-circle {
+    font-size: 50px;
+    color: black;
+}
+
+.fa-codepen:hover {
+    color: #34a65f;
+}
+
+.fa-free-code-camp:hover {
+    color: green;
+}
+
+.fa-github-square:hover {
+    color: #4078c0;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+/* CONTACT LINKS END */
