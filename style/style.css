@@ -21,6 +21,13 @@ span.section-title {
 
 /* FORMAT STUFF END */
 
+/* NAVIGATION START */
+.nav-link:hover{
+color: white;
+opacity: 0.5;
+}
+/* NAVIGATION END */
+
 /* LANDING START */
 #landing {
     background: linear-gradient(rgba(244, 242, 242, 0.15),
@@ -134,8 +141,11 @@ span.section-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* color: white;     */
     scroll-margin-block-start: 60px;
+}
+
+#testimonial h2:first-child{
+    font-size: 40px  ;
 }
 
 .circle {
