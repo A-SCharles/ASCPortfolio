@@ -134,6 +134,13 @@ opacity: 0.5;
 /* PROJECT END */
 
 /* TESTIMONIAL START */
+#testback{
+    background-image: url(../image/resume2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+}
 #testimonial {
     background: linear-gradient(rgba(244, 242, 242, 0.1),
             rgba(248, 248, 248, 0.1)),
