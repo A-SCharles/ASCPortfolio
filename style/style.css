@@ -1,6 +1,13 @@
 /* chosen portfolio template: http://demo.harnishdesign.net/html/callum/index.html */
 
 /* FORMAT STUFF START */
+html,body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 .section-title {
     color: white;
     border-radius: 5px;
@@ -155,6 +162,14 @@ opacity: 0.5;
     font-size: 40px  ;
 }
 
+#testimonial img{
+    aspect-ratio: 1;
+    height: 100%;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .circle {
     width: 10px !important;
     height: 10px !important;
@@ -163,21 +178,7 @@ opacity: 0.5;
     background-color: white !important;
 }
 
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-}
-
-.projects-container img {
-    max-height: 400px;
-    /* max-width: 300px; */
-    object-fit: cover;
-    flex-grow: 1;
-}
-
-/* TESTIMONIAL END */
+    /* TESTIMONIAL END */
 
 /* CONTACT LINKS START */
 #contact{
