@@ -7,17 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" defer>
     <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" defer>
     <!-- FONT AWESOME CSS -->
-    <script src="https://kit.fontawesome.com/2dd6cd0ef4.js" crossorigin="anonymous"></script>
-    <!-- FONT AWESOME CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/2dd6cd0ef4.js" crossorigin="anonymous" defer></script>
     <!-- BOOTSTRAP ICONS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" defer>
     <!-- My CSS -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" defer>
     <link rel="shortcut icon" href="./image/titleLogo.png" type="image/x-icon">
     <title>Abdus-Samad Charles Portfolio</title>
 </head>
@@ -27,8 +25,9 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-bottom border-primary border-5">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#about">
+                <img src="./image/navLogo.png" alt="" width="45" height="45" class="d-inline-block align-text-top">
                 Abdus-Samad Charles
-                <img src="./image/navLogo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,23 +35,26 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link text-white" href="#landing">Home</a>
-                    <a class="nav-link text-white" href="#about">About</a>
-                    <a class="nav-link text-white" href="#services">Services</a>
+
                     <!-- DROPDOWN  -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#about" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            More
+                            About Me
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                            <li><a class="dropdown-item" href="#about">About</a></li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
                             <li><a class="dropdown-item" href="#skills">Skills</a></li>
                             <li><a class="dropdown-item" href="#testimonial">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#resume">Resumè</a></li>
+                            <li><a class="dropdown-item" href="#projects">Projects</a></li>
                         </ul>
                     </li>
                     <!-- DROPDOWN  -->
-                    <a class="nav-link text-white" href="#resume">Resumè</a>
-                    <a class="nav-link text-white" href="#project">Projects</a>
                     <a class="nav-link text-white" href="#contact">Contact</a>
+                    
                 </div>
             </div>
         </div>
@@ -120,19 +122,19 @@
             </div>
 
             <div class="row">
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="col-lg-3 col-6">
-                    <p class="text-black-50 fs-3">Location: </p>
-                    <p class="fs-4"><span class="fa fa-map-marker text-black fs-4"> Cape-Town RSA</span></p>
-                </div>
-                
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="col-lg-3 col-6">
+                <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
                     <p class="text-black-50 fs-3">Email: </p>
-                    <p class="fs-4"><span class="fa fa-envelope-o text-black fs-4"> a.charles.edu@gmail.com</span></p>
+                    <p class="fs-5"><span class="fa fa-envelope-o text-black fs-4"> </span>a.charles.edu@gmail.com</p>
                 </div>
-                
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="col-lg-3 col-6">
+
+                <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+                    <p class="text-black-50 fs-3">Location: </p>
+                    <p class="fs-5"><span class="fa fa-map-marker text-black fs-4"> </span>Cape-Town RSA</p>
+                </div>
+
+                <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <p class="text-black-50 fs-3">Contact: </p>
-                    <p class="fs-4"><span class="fa fa-user-circle-o text-black fs-4"> 074 269 5595</span></p>
+                    <p class="fs-5"><span class="fa fa-user-circle-o text-black fs-4"> </span>074 269 5595</p>
                 </div>
             </div>
         </div>
@@ -152,8 +154,10 @@
                     <div class="card p-3 text-center">
                         <img src="./image/webdev.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Web Development</h5> <hr class="my-1">
-                            <p class="card-text">The Creation, Building and Maintenance of websites to meet a Clients requirements.</p>
+                            <h5 class="card-title">Web Development</h5>
+                            <hr class="my-1">
+                            <p class="card-text">The Creation, Building and Maintenance of websites to meet a Clients
+                                requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -162,8 +166,10 @@
                     <div class="card p-3 text-center">
                         <img src="./image/webdeS.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Web Design</h5> <hr class="my-1">
-                            <p class="card-text">The Planning and Design of a web page using visual design principles to meet a clients needs.</p>
+                            <h5 class="card-title">Web Design</h5>
+                            <hr class="my-1">
+                            <p class="card-text">The Planning and Design of a web page using visual design principles to
+                                meet a Clients needs.</p>
                         </div>
                     </div>
                 </div>
@@ -172,9 +178,9 @@
                     <div class="card p-3 text-center">
                         <img src="./image/gdes.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5> <hr class="my-1">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Graphic Design</h5>
+                            <hr class="my-1">
+                            <p class="card-text">Creating of Visually Aesthetic Designs using Typography and images to optimize user experience.</p>
                         </div>
                     </div>
                 </div>
@@ -190,29 +196,38 @@
             </h3>
             <div class="row">
                 <div class="col-md-6">
+                    <!-- one -->
                     <div class="card border border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
+                            <i class="fa-brands fa-html5 fs-1"></i>
                             HTML
-                           <i class="fa-brands fa-html5 fs-1 text-black"></i><span>90%</span>
+                            <span>90%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                 style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
+
+                    <!-- two -->
                     <div class="card border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
-                            CSS <i class="fa-brands fa-css3-alt fs-1 text-black"></i><span>90%</span>
+                            <i class="fa-brands fa-css3-alt fs-1"></i>
+                            CSS 
+                            <span>90%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                 style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
+
+                    <!-- three -->
                     <div class="card border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
+                            <i class="fa-brands fa-bootstrap fs-1"></i>
                             Bootstrap
-                            <i class="fa-brands fa-bootstrap fs-1"></i><span>55%</span>
+                            <span>55%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -220,31 +235,40 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6">
+                    <!-- four -->
                     <div class="card border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
-                            Visual Basics
-                            <i class="fa-solid fa-code fs-1 text-black"></i><span>60%</span>
+                            <i class="fa-solid fa-code fs-1"></i>
+                            <span>Visual Basics</span>
+                            <span>60%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                 style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
+
+                    <!-- five -->
                     <div class="card border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
-                            Photoshop 
-                            <i class="fa-solid fa-paintbrush text-black fs-1"></i><span>45%</span>
+                            <i class="fa-solid fa-paintbrush fs-1"></i>
+                            <span>Photoshop</span>
+                            <span>45%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                                 style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
+
+                    <!-- six -->
                     <div class="card border-3 border-dark p-3 mb-5">
                         <p class="d-flex justify-content-between">
-                            Animate 
-                            <i class="fa-solid fa-play text-black fs-1"></i><span>35%</span>
+                            <i class="fa-solid fa-play fs-1"></i>
+                            <span>Animate</span>
+                            <span>35%</span>
                         </p>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -259,74 +283,79 @@
 
     <!-- testimonial start -->
     <section id="testback">
-    <section id="testimonial" class="container py-5 text-center text-white">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p class="fs-5 fw-light">What people say about me</p>
-            <div class="container text-dark text-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active circle" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2" class="circle"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3" class="circle"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4" class="circle"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5" class="circle"></button>
-                    </div>
+        <section id="testimonial" class="container py-5 text-center text-white">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <p class="fs-5 fw-light">What people say about me</p>
+                <div class="container text-dark text-center">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active circle" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2" class="circle"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3" class="circle"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4" class="circle"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5" class="circle"></button>
+                        </div>
 
-                    <div class="carousel-inner pb-5 text-white">
-                        <div class="carousel-item active">
-                            <img src="./image/joel.png" class="rounded-circle my-2" alt="">
-                            <h2>Joel Mukanya</h2>
-                            <p class="fs-3 fw-lighter">Lecturer</p>
-                            <p class="fs-4 fw-light">Abdus-Samad Charles is a smart, talented, and professional young man who will bring a good input to your company. He seems like he's coming from a good family in addition Charles is very polite and neat.</p>
+                        <div class="carousel-inner py-5 text-white">
+                            <div class="carousel-item active">
+                                <img src="./image/joel.png" class="rounded-circle my-2" alt="">
+                                <h2>Joel Mukanya</h2>
+                                <p class="fs-3 fw-lighter">Lecturer</p>
+                                <p class="p fs-4 fw-light">Abdus-Samad Charles is a smart, talented, and professional
+                                    young man who will bring a good input to your company. He seems like he's coming
+                                    from a good family in addition Charles is very polite and neat.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/Michaela.png" class="rounded-circle my-2" alt="">
+                                <h2>Michaela Ward</h2>
+                                <p class="fs-3 fw-lighter">peer</p>
+                                <p class="fs-4 fw-light">Abdus-Samad Charles is one of the most professional and
+                                    intellectual guys I've ever met. His presence speaks more than words could ever
+                                    express.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/Saleem.png" class="rounded-circle my-2" alt="">
+                                <h2>Mogamat Saleem Ariefdien</h2>
+                                <p class="fs-3 fw-lighter">peer</p>
+                                <p class="fs-4 fw-light">Abdus-Samad is a great individual in terms of his hard work, dedication and is always willing to help others in need.  He is a honest person, good team player and a true leader.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/Taucia.png" class="rounded-circle my-2" alt="">
+                                <h2>Taucia Jackson</h2>
+                                <p class="fs-3 fw-lighter">peer</p>
+                                <p class="fs-4 fw-light">Abdus-Samad is a hard working person that excels in all the things he does, he is focused and takes challenges head on, he is very helpful and understanding.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/Ikhlaas.png" class="rounded-circle my-2" alt="">
+                                <h2>Ikhlaas Rawoot</h2>
+                                <p class="fs-3 fw-lighter">peer</p>
+                                <p class="fs-4 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Delectus, tenetur?</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./image/Michaela.png" class="rounded-circle my-2" alt="">
-                            <h2>Michaela Ward</h2>
-                            <p class="fs-3 fw-lighter">peer</p>
-                            <p class="fs-4 fw-light">Abdus-Samad Charles is one of the most professional and intellectual guys I've ever met. His presence speaks more than words could ever express.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./image/Saleem.png" class="rounded-circle my-2" alt="">
-                            <h2>Mogamat Saleem Ariefdien</h2>
-                            <p class="fs-3 fw-lighter">peer</p>
-                            <p class="fs-4 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, tenetur?</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./image/Taucia.png" class="rounded-circle my-2" alt="">
-                            <h2>Taucia Jackson</h2>
-                            <p class="fs-3 fw-lighter">peer</p>
-                            <p class="fs-4 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, tenetur?</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./image/Ikhlaas.png" class="rounded-circle my-2" alt="">
-                            <h2>Ikhlaas Rawoot</h2>
-                            <p class="fs-3 fw-lighter">peer</p>
-                            <p class="fs-4 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, tenetur?</p>
-                        </div>
-                    </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
     </section>
-</section>
     <!-- testimonial end -->
 
     <!--resumė beginning -->
@@ -344,18 +373,17 @@
                     <div class="border-start border-2 border-primary ps-3">
                         <h4 class="">Life Choices Coding Academy</h4>
                         <p class="mb-2">Life Choices / 2022 - Current</p>
-                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the dummy text.</p>
-                        <hr class="my-4">
+                        <!-- <p class="text-muted">Learning HTML, CSS, JavaScript, MySQL, NodeJS, VueJS.</p> -->
+                        <hr class="my-4"> 
                         <h4 class="">Information Technology NCV4</h4>
                         <p class="mb-2">College of Cape-Town / 2019 - 2021</p>
-                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the dummy text.</p>
+                        <!-- <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the dummy text.</p> -->
                         <hr class="my-4">
                         <h4 class="">Mechanical Engineering NCV2</h4>
                         <p class="mb-2">College of Cape-Town / 2018</p>
-                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the dummy text.</p>
+                        <!-- <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the dummy text.</p> -->
                     </div>
                 </div>
                 <!-- education ending -->
@@ -367,13 +395,13 @@
                     <div class="border-start border-2 border-primary ps-3">
                         <h4 class="">Buffet Waiter</h4>
                         <p class="mb-2">La Qualité Caterers / 2018 - 2020</p>
-                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the dummy text.</p>
+                        <!-- <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the dummy text.</p> -->
                         <hr class="my-4">
                         <h4 class="">Buffet Waiter</h4>
                         <p class="mb-2">Ashura's Catering / 2018 - 2019</p>
-                        <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the dummy text.</p>
+                        <!-- <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the dummy text.</p> -->
                         <hr class="my-4">
                     </div>
                 </div>
@@ -488,7 +516,7 @@
                     <h3>Contact me here</h3>
 
                     <!-- Contact Form -->
-                    <form id="contact-form" class="form-border pb-5 pe-4 mt-5" action="https://formspree.io/f/myyolgzn"
+                    <form id="contact-form" class="form-border pb-5 pe-4 mt-5 fs-5" action="https://formspree.io/f/myyolgzn"
                         method="post">
                         <label class="form-label pt-3" for="name">What is Your Name:</label>
                         <input id="name" name="name" type="text" class="form-control py-1" required>
@@ -506,32 +534,36 @@
                     <h3 class="text-center text-lg-start mb-5">Also, find me at these places</h3>
                     <div class="contact-links">
 
-                        <ul class="list-unstyled">
+                        <ul  class="list-unstyled">
                             <li class="my-5">
                                 <!-- Codepen -->
-                                <a href="https://codepen.io/AsC_Squirtle" target="_blank">
-                                    <i class="fa fa-codepen"> Codepen</i>
+                                <a id="profile-link" href="https://codepen.io/AsC_Squirtle" target="_blank">
+                                    <i class="fa fa-codepen"></i>
+                                    Codepen
                                 </a>
                             </li>
 
                             <li class="my-5">
                                 <!-- FCC -->
                                 <a id="profile-link" href="https://www.freecodecamp.org/ASCharles" target="_blank">
-                                    <i class="fa fa-free-code-camp"> FreeCodeCamp</i>
+                                    <i class="fa fa-free-code-camp"></i>
+                                FreeCodeCamp
                                 </a>
                             </li>
 
                             <li class="my-5">
                                 <!-- Github -->
                                 <a id="profile-link" href="https://github.com/A-SCharles" target="_blank">
-                                    <i class="fa fa-github-square"> Github</i>
+                                    <i class="fa fa-github-square"></i>
+                                    Github
                                 </a>
                             </li>
                             <li class="my-5">
                                 <!-- LinkedIn -->
                                 <a href="https://za.linkedin.com/in/abdus-samad-charles-51bba5227?trk=people-guest_people_search-card"
                                     target="_blank">
-                                    <i class="fa fa-linkedin"> LinkedIn</i>
+                                    <i class="fa fa-linkedin"></i>
+                                    LinkedIn
                                 </a>
                             </li>
                         </ul>

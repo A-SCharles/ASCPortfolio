@@ -1,11 +1,11 @@
 /* chosen portfolio template: http://demo.harnishdesign.net/html/callum/index.html */
 
 /* FORMAT STUFF START */
-html,body
-{
+html,
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .section-title {
@@ -29,10 +29,11 @@ span.section-title {
 /* FORMAT STUFF END */
 
 /* NAVIGATION START */
-.nav-link:hover{
-color: white;
-opacity: 0.5;
+.nav-link:hover {
+    color: white;
+    opacity: 0.5;
 }
+
 /* NAVIGATION END */
 
 /* LANDING START */
@@ -98,6 +99,10 @@ opacity: 0.5;
     margin: auto;
 }
 
+#services .card {
+    height: 250px;
+}
+
 /* SERVICES END */
 
 /* SKILLS START */
@@ -141,14 +146,17 @@ opacity: 0.5;
 /* PROJECT END */
 
 /* TESTIMONIAL START */
-#testback{
+#testback {
     background-image: url(../image/resume2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
 }
+
 #testimonial {
+    min-height: fit-content;
+    /* min-height: 100vh; */
     background: linear-gradient(rgba(244, 242, 242, 0.1),
             rgba(248, 248, 248, 0.1)),
         url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
@@ -158,11 +166,33 @@ opacity: 0.5;
     scroll-margin-block-start: 60px;
 }
 
-#testimonial h2:first-child{
-    font-size: 40px  ;
+#testimonial h2:first-child {
+    font-size: 40px;
 }
 
-#testimonial img{
+#testimonial .carousel-inner {
+    height: 550px;
+}
+
+@media screen and (max-width:500px) {
+    #testimonial {
+        /* height: 900px; */
+    }
+
+    #testimonial .carousel-inner {
+        /* height: 1000px; */
+    }
+
+    #testimonial .carousel-indicators {
+        /* padding-top: 800px; */
+    }
+
+    #testimonial .carousel-item .p {
+        /* padding-bottom: 200px !important; */
+    }
+}
+
+#testimonial img {
     aspect-ratio: 1;
     height: 100%;
     width: 250px;
@@ -178,22 +208,31 @@ opacity: 0.5;
     background-color: white !important;
 }
 
-    /* TESTIMONIAL END */
+/* TESTIMONIAL END */
 
 /* CONTACT LINKS START */
-#contact{
+#contact {
     scroll-margin-block-start: 60px;
 }
+
+#contact ul li a {
+    font-size: 1.50em;
+    color: white;
+    text-decoration: none;
+    transition: .8s;
+}
+
+#contact ul li a:hover {
+    opacity: .5;
+}
+
+
+
 .fa {
     color: white;
     padding: 10px;
     transition: .5s;
     font-size: 2em;
-}
-
-.fa-circle {
-    font-size: 50px;
-    color: black;
 }
 
 .fa-codepen:hover {
@@ -211,5 +250,33 @@ opacity: 0.5;
 .fa-linkedin:hover {
     color: #0077b5;
 }
+
+/* FONT AWESOME STYLING */
+.fa-html5 {
+    color: orange;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-bootstrap {
+    color: #563d7c;
+}
+
+.fa-code {
+    color: #0078d7;
+}
+
+.fa-paintbrush {
+    color: #3c327b;
+}
+
+.fa-play {
+    color: #ed2224;
+}
+
+
+/* FONT AWESOME STYLING END */
 
 /* CONTACT LINKS END */
