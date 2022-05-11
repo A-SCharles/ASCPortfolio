@@ -116,6 +116,11 @@ span.section-title {
     scroll-margin-block-start: 60px;
 }
 
+
+.logo{
+height: 40px;
+width: fit-content;
+}
 /* SKILLS END */
 
 /* RESUMÉ START */
@@ -129,7 +134,15 @@ span.section-title {
     scroll-margin-block-start: 60px;
 }
 
+#resume a{
+    color: black;
+    text-decoration-color: #0077b5;
+}
 
+#resume a:hover{
+    color: #0077b5;
+    text-decoration-color: #0077b5;
+}
 /* RESUMÉ END */
 
 /* PROJECT START */
@@ -141,6 +154,66 @@ span.section-title {
     background-attachment: fixed;
     object-fit: cover;
     scroll-margin-block-start: 60px;
+}
+
+/* Card relative */
+#project .card{
+    position: relative;
+    height: 525px;
+}
+/* SIZES IMAGES */
+#project .card img {
+    max-height: 400px;
+    /* max-width: 300px; */
+    object-fit: cover;
+    flex-grow: 1;
+    transition: .8s;
+    /* opacity: .5; */
+}
+
+/* BECOMES OPAQUE WHEN HOVER */
+#project .card:hover > img{
+    opacity: .5;
+}
+
+/* CENTERS BUTTONS IN IMG */
+#project .btn-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTON SPACING */
+#project .btn{
+    color: white;
+    margin-right: 1rem!important;
+    margin-left: 1rem!important;
+}
+
+#project .btn:hover{
+    background-color: #264de4;
+    color: black;
+    margin-right: 1rem!important;
+    margin-left: 1rem!important;
+}
+
+/* SETS BTN TO INVISIBLE */
+#project .card .btn-center .btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: .8s;
+    z-index: 1;
+}
+
+/* SHOWS BUTTONS WHEN HOVER */
+#project .card:hover>.btn-center .btn {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* PROJECT END */
