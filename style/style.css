@@ -69,7 +69,7 @@ span.section-title {
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
-    line-height: 2;
+    line-height: 2.20;
     scroll-margin-block-start: 60px;
 }
 
@@ -173,6 +173,12 @@ width: fit-content;
 
 /* BECOMES OPAQUE WHEN HOVER */
 #project .card:hover > img{
+    background-color: black;
+    opacity: .5;
+}
+
+#project .card:hover > img{
+    background-color: black;
     opacity: .5;
 }
 
@@ -247,24 +253,6 @@ width: fit-content;
     height: 550px;
 }
 
-@media screen and (max-width:500px) {
-    #testimonial {
-        /* height: 900px; */
-    }
-
-    #testimonial .carousel-inner {
-        /* height: 1000px; */
-    }
-
-    #testimonial .carousel-indicators {
-        /* padding-top: 800px; */
-    }
-
-    #testimonial .carousel-item .p {
-        /* padding-bottom: 200px !important; */
-    }
-}
-
 #testimonial img {
     aspect-ratio: 1;
     height: 100%;
@@ -297,6 +285,7 @@ width: fit-content;
 
 #contact ul li a:hover {
     opacity: .5;
+    color: white;
 }
 
 #contact span.section-title{
