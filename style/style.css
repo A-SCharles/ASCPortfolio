@@ -1,6 +1,25 @@
 /* chosen portfolio template: http://demo.harnishdesign.net/html/callum/index.html */
 
 /* FORMAT STUFF START */
+/* H2 Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+/* h4 Font */
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+h4{
+    font-family: 'Cardo', serif;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+
+
 html,
 body {
     margin: 0;
@@ -38,17 +57,28 @@ span.section-title {
 
 /* LANDING START */
 #landing {
-    background: linear-gradient(rgba(244, 242, 242, 0.15),
-            rgba(248, 248, 248, 0.15)), url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
+    background: linear-gradient(rgba(244, 242, 242, 0.1),
+            rgba(248, 248, 248, 0.1)), url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+#landing h1{
+    font-family: 'Times New Roman';
+    font-size: 3em;
+}
+
+#landing h3, #landing h4{
+font-style: italic;
+}
+
+#landing .btn{
+    transition: 0.5s !important;
+}
+
 #landing .btn:hover {
-    background-color: #0077b5;
-    color: white;
-    transition: 0.8s;
+    background-color: #0077b5 ;
 }
 
 #Me {
@@ -164,19 +194,12 @@ width: fit-content;
 /* SIZES IMAGES */
 #project .card img {
     max-height: 400px;
-    /* max-width: 300px; */
     object-fit: cover;
     flex-grow: 1;
-    transition: .8s;
-    /* opacity: .5; */
+    transition: .5s;
 }
 
 /* BECOMES OPAQUE WHEN HOVER */
-#project .card:hover > img{
-    background-color: black;
-    opacity: .5;
-}
-
 #project .card:hover > img{
     background-color: black;
     opacity: .5;
@@ -199,20 +222,24 @@ width: fit-content;
     color: white;
     margin-right: 1rem!important;
     margin-left: 1rem!important;
+    transition: .5s;
+    text-decoration: none;
+    outline: white 3px solid;
+    background-color: #0077b5;
+    font-size: 16px;
 }
 
 #project .btn:hover{
-    background-color: #264de4;
-    color: black;
-    margin-right: 1rem!important;
-    margin-left: 1rem!important;
+    outline: white 3px solid;
+    background-color: transparent;
+    color: white;
 }
 
 /* SETS BTN TO INVISIBLE */
 #project .card .btn-center .btn {
     visibility: hidden;
     opacity: 0;
-    transition: .8s;
+    transition: .5s;
     z-index: 1;
 }
 
@@ -237,9 +264,8 @@ width: fit-content;
 
 #testimonial {
     min-height: fit-content;
-    /* min-height: 100vh; */
-    background: linear-gradient(rgba(244, 242, 242, 0.1),
-            rgba(248, 248, 248, 0.1)),
+    background: linear-gradient(rgba(244, 242, 242, 0.01),
+            rgba(248, 248, 248, 0.01)),
         url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -278,17 +304,6 @@ width: fit-content;
     scroll-margin-block-start: 60px;
 }
 
-#contact ul li a {
-    font-size: 1.50em;
-    color: white;
-    text-decoration: none;
-    transition: .8s;
-}
-
-#contact ul li a:hover {
-color: grey;
-}
-
 #contact span.section-title{
     color: white;
     background-color: grey;
@@ -296,6 +311,26 @@ color: grey;
     padding-right: 5px;
     font-size: 25px;
     font-weight: 500;
+}
+
+#contact .btn{
+    transition: .5s;
+}
+
+#contact .btn:hover{
+background-color: #0077b5;
+color: white;
+}
+
+#contact ul li a {
+    font-size: 1.50em;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#contact ul li a:hover {
+color: grey;
 }
 
 .fa {
