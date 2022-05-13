@@ -231,6 +231,8 @@ width: fit-content;
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
+    scroll-margin: 60px;
+
 }
 
 #testimonial {
@@ -242,7 +244,7 @@ width: fit-content;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    scroll-margin-block-start: 60px;
+    scroll-margin: 60px;
 }
 
 #testimonial h2:first-child {
@@ -284,8 +286,7 @@ width: fit-content;
 }
 
 #contact ul li a:hover {
-    opacity: .5;
-    color: white;
+color: grey;
 }
 
 #contact span.section-title{
