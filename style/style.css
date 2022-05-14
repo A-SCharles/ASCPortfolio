@@ -113,15 +113,9 @@ font-style: italic;
 
 /* SERVICES START */
 #services {
-    background: linear-gradient(rgba(244, 242, 242, 0.10),
-            rgba(248, 248, 248, 0.10)), url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
     scroll-margin-block-start: 60px;
-    /* min-height: 900; */
 }
+
 
 #services .card img {
     aspect-ratio: 1;
@@ -259,17 +253,20 @@ width: fit-content;
     background-attachment: fixed;
     object-fit: cover;
     scroll-margin: 60px;
+}
+
+#testback div.container{
+    background-image: url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    scroll-margin: 60px;
 
 }
 
 #testimonial {
     min-height: fit-content;
-    background: linear-gradient(rgba(244, 242, 242, 0.01),
-            rgba(248, 248, 248, 0.01)),
-        url(../image/lubo-minar-B-gb_8fgmz8-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     scroll-margin: 60px;
 }
 
@@ -355,33 +352,5 @@ color: grey;
 .fa-linkedin:hover {
     color: #0077b5;
 }
-
-/* FONT AWESOME STYLING */
-.fa-html5 {
-    color: orange;
-}
-
-.fa-css3-alt {
-    color: #264de4;
-}
-
-.fa-bootstrap {
-    color: #563d7c;
-}
-
-.fa-code {
-    color: #0078d7;
-}
-
-.fa-paintbrush {
-    color: #3c327b;
-}
-
-.fa-play {
-    color: #ed2224;
-}
-
-
-/* FONT AWESOME STYLING END */
 
 /* CONTACT LINKS END */
